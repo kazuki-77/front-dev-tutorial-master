@@ -1,0 +1,15 @@
+span {
+  /* プロパティ */
+  display: inline-block;
+  width: 100px;
+  height: 400px;
+  background-color: magenta;
+}
+
+.cls {
+  /* プロパティ */
+  display: inline-block;
+  width: 100px;
+  height: 400px;
+  background-color: gray;
+}
