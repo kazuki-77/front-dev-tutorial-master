@@ -22,7 +22,8 @@
  */
 /* インライン要素に対して */
 // .parent {
-//   text-align: left;
+//   text-align: center;
+//   letter-spacing: -6px;  /*要素ごとの余白がなくなる　文字の間隔を調整するとき*/
 // }
 // .child {
 //     display: inline-block;
@@ -32,7 +33,7 @@
 // .parent {
 // }
 // .child {
-//     margin: 0 auto;
+//     margin: 0 auto; /*左右の中央揃え　widthが指定されている場合に使える*/
 // }
 
 /**
@@ -42,15 +43,15 @@
 //   position: relative;
 // }
 // .child {
-//   position: absolute;
+//   position: absolute; /*親要素のrelativeを左上を始点とする*/
 //   top: 50%;
 //   left: 50%;
-//   transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%); /*boxの左上を基準として動かしているため、box自体の上下-50%分移動させboxの中央が親要素の中央に来るように設定している*/
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-end;
-// }
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
